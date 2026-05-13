@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.quantity.measurement.QuantityLengthTest" time="0.116" tests="13" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\nisha\Downloads\java test case8\target\test-classes;C:\Users\nisha\Downloads\java test case8\target\classes;C:\Users\nisha\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\nisha\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nisha\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\nisha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nisha\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\nisha\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\nisha\AppData\Local\Temp\surefire5682106714204698518\surefirebooter-20260412212639364_3.jar C:\Users\nisha\AppData\Local\Temp\surefire5682106714204698518 2026-04-12T21-26-39_159-jvmRun1 surefire-20260412212639364_1tmp surefire_0-20260412212639364_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\nisha\Downloads\java test case8\target\test-classes;C:\Users\nisha\Downloads\java test case8\target\classes;C:\Users\nisha\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\nisha\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nisha\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\nisha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nisha\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\nisha\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\nisha"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\nisha\Downloads\java test case8"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\nisha\AppData\Local\Temp\surefire5682106714204698518\surefirebooter-20260412212639364_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8"/>
+    <property name="user.name" value="nisha"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.18+8"/>
+    <property name="localRepository" value="C:\Users\nisha\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\nisha\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="C:\Users\nisha\Downloads\java test case8"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\maven\apache-maven-3.9.12\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\nisha\AppData\Local\Programs\Python\Python313\python.exe;C:\Users\nisha\AppData\Roaming\Python\Python313\site-packages;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\node.js\;C:\ProgramData\chocolatey\bin;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\cursor\resources\app\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\nisha\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\nisha\AppData\Local\Programs\Python\Python313\;C:\Users\nisha\AppData\Local\Programs\Python\Launcher\;C:\Users\nisha\AppData\Roaming\Python\Python313\site-packages;C:\Users\nisha\AppData\Local\Microsoft\WindowsApps\python3.exe;C:\Users\nisha\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Users\nisha\AppData\Local\Programs\Python\Python37\;C:\Users\nisha\AppData\Local\Microsoft\WindowsApps;C:\Users\nisha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nisha\AppData\Roaming\npm;C:\Program Files\node.js\node_modules\npm\bin;C:\Users\nisha\AppData\Local\GitHubDesktop\bin;C:\Users\nisha\.dotnet\tools;C:\Program Files\Java\jre-1.8\bin;C:\Program Files\Git\bin;E:\Antigravity\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.18+8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="given1YardAnd3Feet_WhenAddedWithTargetYards_ShouldReturn2Yards" classname="com.quantity.measurement.QuantityLengthTest" time="0.048"/>
+  <testcase name="givenNullTargetUnit_WhenAdded_ShouldThrowException" classname="com.quantity.measurement.QuantityLengthTest" time="0.002"/>
+  <testcase name="given5FeetAnd0Inches_WhenAddedWithTargetFeet_ShouldReturn5Feet" classname="com.quantity.measurement.QuantityLengthTest" time="0.002"/>
+  <testcase name="givenNaNValue_WhenCreated_ShouldThrowException" classname="com.quantity.measurement.QuantityLengthTest" time="0.002"/>
+  <testcase name="given1FeetAnd12Inches_WhenAddedWithTargetInches_ShouldReturn24Inches" classname="com.quantity.measurement.QuantityLengthTest" time="0.001"/>
+  <testcase name="LengthUnit_INCHES_convertToBaseUnit_12_ShouldReturn_1" classname="com.quantity.measurement.QuantityLengthTest" time="0.001"/>
+  <testcase name="given36InchesAnd1Yard_WhenCompared_ShouldBeEqual" classname="com.quantity.measurement.QuantityLengthTest" time="0.003"/>
+  <testcase name="givenInfinityValue_WhenCreated_ShouldThrowException" classname="com.quantity.measurement.QuantityLengthTest" time="0.002"/>
+  <testcase name="given1Feet_WhenConvertedToInches_ShouldReturn12Inches" classname="com.quantity.measurement.QuantityLengthTest" time="0.002"/>
+  <testcase name="givenImplicitAddition_ShouldDefaultToFirstOperandUnit" classname="com.quantity.measurement.QuantityLengthTest" time="0.001"/>
+  <testcase name="given1FeetAnd12Inches_WhenAddedWithTargetFeet_ShouldReturn2Feet" classname="com.quantity.measurement.QuantityLengthTest" time="0.001"/>
+  <testcase name="given2Point54Cm_WhenConvertedToInches_ShouldReturn1Inch" classname="com.quantity.measurement.QuantityLengthTest" time="0.0"/>
+  <testcase name="LengthUnit_FEET_convertToBaseUnit_12_ShouldReturn_12" classname="com.quantity.measurement.QuantityLengthTest" time="0.001"/>
+</testsuite>
