@@ -348,7 +348,7 @@ export default function App() {
           </div>
           
           <div className="login-buttons-group">
-            <button className="btn-oauth google" onClick={() => window.location.href = 'http://localhost:8080/api/auth/login'}>
+            <button className="btn-oauth google" onClick={() => window.location.href = '/api/auth/login'}>
               <svg width="18" height="18" viewBox="0 0 18 18">
                 <path fill="#4285F4" d="M17.6 9.2c0-.6-.05-1.2-.15-1.75H9v3.3h4.8c-.2 1.1-.8 2-1.8 2.6v2.2h2.9c1.7-1.5 2.7-3.8 2.7-6.35z"/>
                 <path fill="#34A853" d="M9 18c2.4 0 4.5-.8 6-2.2l-2.9-2.2c-.8.5-1.8.8-3.1.8-2.4 0-4.4-1.6-5.1-3.8H.9v2.3C2.4 15.9 5.5 18 9 18z"/>

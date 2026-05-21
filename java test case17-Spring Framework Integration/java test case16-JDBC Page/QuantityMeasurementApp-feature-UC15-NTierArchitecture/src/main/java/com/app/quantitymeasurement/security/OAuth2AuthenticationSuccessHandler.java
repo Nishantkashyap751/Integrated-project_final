@@ -27,9 +27,17 @@ public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationS
         String token = tokenProvider.generateToken(authentication);
         
         // Redirect back to frontend dashboard with token in query params
-        String targetUrl = UriComponentsBuilder.fromUriString("http://localhost:3000")
-                .queryParam("token", token)
-                .build().toUriString();
+        String host = request.getHeader("host");
+        String targetUrl;
+        if (host != null && host.contains("localhost")) {
+            targetUrl = UriComponentsBuilder.fromUriString("http://localhost:3000")
+                    .queryParam("token", token)
+                    .build().toUriString();
+        } else {
+            targetUrl = UriComponentsBuilder.fromUriString("/")
+                    .queryParam("token", token)
+                    .build().toUriString();
+        }
 
         if (response.isCommitted()) {
             logger.debug("Response has already been committed. Unable to redirect to " + targetUrl);
