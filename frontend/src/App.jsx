@@ -110,7 +110,7 @@ export default function App() {
       const claims = decodeToken(token);
       if (claims) {
         setUser(claims);
-        setConnected(true);
+        checkConnection();
       } else {
         // Clear corrupt token
         signOut();
@@ -228,6 +228,7 @@ export default function App() {
 
   const handleMockLogin = async () => {
     setLoading(true);
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     try {
       const res = await fetch('/api/auth/mock-login?email=developer@quantitymeasurement.com&name=Dev User');
       if (res.ok) {
@@ -235,10 +236,14 @@ export default function App() {
         localStorage.setItem('token', data.token);
         setToken(data.token);
       } else {
-        alert("Failed to get mock token from backend. Ensure Spring Boot is running on port 8080!");
+        alert(isLocal 
+          ? "Failed to get mock token from backend. Ensure Spring Boot is running locally on port 8080!"
+          : "Failed to get mock token from backend. Please verify your database connection on Render.");
       }
     } catch (err) {
-      alert("Failed to reach Spring Boot server. Confirm it is running!");
+      alert(isLocal 
+        ? "Failed to reach Spring Boot server. Confirm it is running locally on port 8080!"
+        : "Failed to reach Spring Boot server. Please check if your Render service is live.");
     } finally {
       setLoading(false);
     }
@@ -299,7 +304,11 @@ export default function App() {
         fetchHistory();
       }
     } catch (err) {
-      setResult({ success: false, message: 'Could not reach server. Verify your Spring Boot application is running on port 8080.' });
+      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const msg = isLocal 
+        ? 'Could not reach local Spring Boot server. Verify your backend is running on port 8080.'
+        : 'Could not reach server. Please verify your Render service is live and your database connection is healthy.';
+      setResult({ success: false, message: msg });
     } finally {
       setLoading(false);
     }
